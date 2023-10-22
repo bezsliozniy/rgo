@@ -1,0 +1,12 @@
+
+@import '../../../styles/variables.scss';
+
+.wrapper {
+  padding: 26px 40px;
+
+  @media (max-width: $sm) {
+    padding: 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}

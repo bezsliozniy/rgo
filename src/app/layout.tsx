@@ -1,6 +1,9 @@
-import { ConfigProvider } from 'antd'
+import Header from '@/components/UI/Header'
+import { ConfigProvider, Flex } from 'antd'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
+import logo from '../../public/logo.png'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,6 +32,7 @@ export default function RootLayout({
             },
           }
         }}>
+          <Header />
           {children}
         </ConfigProvider>
       </body>

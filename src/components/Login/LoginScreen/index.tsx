@@ -27,16 +27,21 @@ const LoginScreen = () => {
   
 
   return (
-  <Flex justify="center" style={{
-    backgroundColor: 'whitesmoke', 
-    minHeight: '100vh'
-  }}>
+    // <div style={{height: '100%', display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
+    //   <div style={{height: "199px", width: '200px', backgroundColor: 'red'}}></div>
+    //   <div style={{height: "199px", width: '200px', backgroundColor: 'red'}}></div>
+    // </div>
+  <Flex justify="center" className={styles.screen}>
     <Flex vertical className={styles.wrapper} justify="space-between" align="center">
       <form
       className={styles.form} 
       onSubmit={formik.handleSubmit}>
         <div>
-          <Typography.Title level={3} style={{marginBottom: 24}}>Welcome back</Typography.Title>
+          <Flex justify="center">
+            <Typography.Title level={3} className={styles.headline}>
+              Welcome Back 👋🏼
+            </Typography.Title>
+          </Flex>
           <LoginCredentials items={[
             {
               icon: <MailOutlined style={{ margin: '0px 3px' }} />,
@@ -103,7 +108,8 @@ const LoginScreen = () => {
         </div>
       </form>
     </Flex>
-  </Flex>)
+  </Flex>
+  )
 };
 
 export default LoginScreen;
