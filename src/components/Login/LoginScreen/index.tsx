@@ -27,10 +27,6 @@ const LoginScreen = () => {
   
 
   return (
-    // <div style={{height: '100%', display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}}>
-    //   <div style={{height: "199px", width: '200px', backgroundColor: 'red'}}></div>
-    //   <div style={{height: "199px", width: '200px', backgroundColor: 'red'}}></div>
-    // </div>
   <Flex justify="center" className={styles.screen}>
     <Flex vertical className={styles.wrapper} justify="space-between" align="center">
       <form
@@ -67,12 +63,7 @@ const LoginScreen = () => {
             }
           ]}/>
           <Flex justify="center">
-            <Typography.Link style={{
-              fontSize: '12px',
-              marginTop: '18px',
-              textDecoration: 'underline',
-              color: 'gray'
-            }}>
+            <Typography.Link className={styles.fgPass}>
               Forgot your password?
             </Typography.Link>
           </Flex>
