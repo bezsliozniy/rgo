@@ -1,12 +1,15 @@
 import styles from './index.module.scss';
-import { Button, Divider, Flex, Input, Typography } from 'antd';
+import { Button, Divider, Flex, Typography } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
 import GoogleButton from '@/components/UI/GoogleButton';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import LoginCredentials from '../LoginCredentials';
+import { useRouter } from 'next/navigation';
 
 const LoginScreen = () => {
+  const router = useRouter()
+
   const validationSchema = Yup.object({
     email: Yup.string()
       .required('Email is required')
@@ -20,8 +23,8 @@ const LoginScreen = () => {
       password: ''
     },
     validationSchema: validationSchema,
-    onSubmit: values => {
-      console.log('Form submitted with values:', values);
+    onSubmit: () => {
+      router.push('./')
     }
   });
   
@@ -77,15 +80,8 @@ const LoginScreen = () => {
           >
             Login
           </Button>
-          <Divider style={{
-            margin: 0,
-            height: '50px'
-          }}>
-            <Typography.Paragraph 
-            style={{
-              fontSize: '12px',
-              paddingTop: '10px'
-            }}>
+          <Divider className={styles.divider}>
+            <Typography.Paragraph className={styles.description}>
               Or
             </Typography.Paragraph>
           </Divider>
@@ -94,7 +90,7 @@ const LoginScreen = () => {
             marginTop: '24px'
           }}>
             <Typography.Paragraph>Dont have an accont?</Typography.Paragraph>
-            <Typography.Link style={{marginLeft: '4px', color: 'black', fontWeight: '600'}}>Register</Typography.Link>
+            <Typography.Link className={styles.register}>Register</Typography.Link>
           </Flex>
         </div>
       </form>

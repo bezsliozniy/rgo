@@ -50,6 +50,22 @@
     @media (max-width: $sm) {
       margin: 0px;
     }
+
+    .divider {
+      margin: 0;
+      height: 50px;
+
+      .description {
+        font-size: 12px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .register {
+    margin-left: 4px; 
+    color: black; 
+    font-weight: 600;
   }
 }
 

@@ -9,12 +9,7 @@ const LoginCredentials = ({items}: any) => {
           size="large" 
           placeholder={item.placeholder}
           prefix={item.icon} 
-          style={{
-            borderRadius: '35px',
-            height: '56px',
-            color: '#637381',
-            fontSize: '16px'
-          }}
+          className={styles.item}
           name={item.name}
           value={item.value}
           onChange={item.handleChange}

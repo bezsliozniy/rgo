@@ -10,3 +10,31 @@
     justify-content: center;
   }
 }
+
+.dashboardWrap {
+  width: 100;
+  position: relative;
+  padding-top: 16px;
+  
+  .tenancy {
+    display: flex;
+    gap: 16px;
+
+    .item {
+      width: 212px; 
+      height: 44px; 
+      border-radius: 8px; 
+      border: 1px solid gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 40px;
+    top: 26px
+  }
+}
+

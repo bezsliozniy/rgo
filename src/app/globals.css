@@ -14,4 +14,78 @@ body {
     height: 100vh;
     background-color: #fff;
   }
+  
+}
+
+.ant-picker-panel {
+  width: 347px;
+  border: 1px solid #919EAB3D !important;
+  border-radius: 16px !important; 
+}
+
+.ant-picker-date-panel {
+  width: 100% !important;
+  padding: 16px !important;
+}
+
+.ant-picker-panel-container {
+  border: none !important;
+  border-radius: 16px !important; 
+}
+
+.ant-picker-footer {
+  display: none !important;
+}
+
+.ant-picker-cell {
+  padding: 0 !important;
+  margin: 10px !important;
+  color: #99B2C6 !important;
+}
+
+.ant-picker-cell-in-view {
+  color: black !important;
+}
+
+.ant-picker-cell .ant-picker-cell-in-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-picker-content thead th {
+  color: #99B2C6 !important;
+  padding-top: 16px !important;
+  padding-bottom: 8px !important;
+}
+
+.ant-picker-body {
+  padding: 0px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.ant-picker-body table{
+  border-collapse: separate !important;
+  border-spacing: 8px 0 !important;
+}
+
+.ant-picker-cell-inner {
+  font-size: 14px;
+  min-width: 36px !important;
+  height: 32px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.ant-picker-header-next-btn, .ant-picker-header-prev-btn {
+  visibility: hidden !important;
+}
+
+.ant-picker-header{
+  align-items: center;
+  height: 32px !important;
+  padding: 0 !important;
+  border-bottom: none !important;
 }
